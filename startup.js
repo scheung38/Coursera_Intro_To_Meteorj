@@ -4,24 +4,17 @@
 if (Meteor.isServer) {
     Meteor.startup(function () {
         if (Images.find().count() == 0) {
-            Images.insert(
-                {
-                img_src: "CMS_Creative_164657191_Kingfisher.jpg",
-                img_alt: "Some birds flying."
-                }
+
+            for (var i = 1; i < 23; i++) {
+                Images.insert(
+                    {
+                    img_src: "img_"+i+".jpg",
+                    img_alt: "image number "+i
+                    }
                 );
-            Images.insert(
-                {
-                img_src: "cute-german-shepherd-puppy-new-wide-wallpapers-in-hd-widescreen.jpg",
-                img_alt: "Some German Shephards."
-                }
-                );
-            Images.insert(
-                {
-                img_src: "pugs.jpeg",
-                img_alt: "Some pugs."
-                }
-                );
+            } // end of for insert images
+
+            console.log("startup.js says:" +Images.find().count());
 
         } // end of if have no images
     });
