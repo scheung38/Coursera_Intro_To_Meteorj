@@ -1,0 +1,17 @@
+<head>
+  <title>my_first_app</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{> time_template}}
+</body>
+
+<template name="hello">
+  <h1>Hello from the {{country}}</h1>
+</template>
+
+
+<template name="time_template">
+  <h1>The time now is: {{show_current_time}}</h1>
+</template>
