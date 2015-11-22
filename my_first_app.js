@@ -1,3 +1,6 @@
+Images = new Mongo.Collection("images");
+console.log(Images.find().count());
+
 if (Meteor.isClient) {
   Session.setDefault('show_country_variable', 'UK');
   Session.setDefault('show_current_time_variable', new Date());
