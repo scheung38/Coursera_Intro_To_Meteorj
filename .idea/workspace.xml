@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9f2102-4e7f-4fa9-91d5-13af9627129f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/CMS_Creative_164657191_Kingfisher.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bass.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/beard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/cute-german-shepherd-puppy-new-wide-wallpapers-in-hd-widescreen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img_9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/laptops.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/pugs.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image_share.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_first_app.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_first_app.html" afterPath="$PROJECT_DIR$/image_share.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/my_first_app.js" afterPath="$PROJECT_DIR$/image_share.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.js" afterPath="$PROJECT_DIR$/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_share.html" afterPath="$PROJECT_DIR$/image_share.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_share.js" afterPath="$PROJECT_DIR$/image_share.js" />
     </list>
     <ignored path="my_first_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +30,8 @@
           <file leaf-file-name="image_share.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/image_share.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.779661">
-                  <caret line="5" column="35" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="35" />
+                <state vertical-scroll-proportion="-0.59806293">
+                  <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -77,11 +46,11 @@
               <file leaf-file-name="image_share.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/image_share.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.63414633">
-                      <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+                    <state vertical-scroll-proportion="0.41463414">
+                      <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
                       <folding>
-                        <marker date="1448235208000" expanded="true" signature="2051:2097" placeholder="{...}" />
-                        <marker date="1448235208000" expanded="true" signature="2084:2091" placeholder="{...}" />
+                        <marker date="1448237123000" expanded="true" signature="1963:2009" placeholder="{...}" />
+                        <marker date="1448237123000" expanded="true" signature="1996:2003" placeholder="{...}" />
                       </folding>
                     </state>
                   </provider>
@@ -137,8 +106,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="224" />
+    <option name="x" value="43" />
+    <option name="y" value="204" />
     <option name="width" value="1842" />
     <option name="height" value="813" />
   </component>
@@ -485,8 +454,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="224" width="1842" height="813" extended-state="0" />
-    <editor active="false" />
+    <frame x="43" y="204" width="1842" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -497,7 +466,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29208633" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29208633" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -536,8 +505,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1448235208000" expanded="true" signature="2051:2097" placeholder="{...}" />
-            <marker date="1448235208000" expanded="true" signature="2084:2091" placeholder="{...}" />
+            <marker date="1448237123000" expanded="true" signature="1963:2009" placeholder="{...}" />
+            <marker date="1448237123000" expanded="true" signature="1996:2003" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -567,19 +536,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/image_share.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.779661">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="35" />
+        <state vertical-scroll-proportion="-0.59806293">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_share.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63414633">
-          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.41463414">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
           <folding>
-            <marker date="1448235208000" expanded="true" signature="2051:2097" placeholder="{...}" />
-            <marker date="1448235208000" expanded="true" signature="2084:2091" placeholder="{...}" />
+            <marker date="1448237123000" expanded="true" signature="1963:2009" placeholder="{...}" />
+            <marker date="1448237123000" expanded="true" signature="1996:2003" placeholder="{...}" />
           </folding>
         </state>
       </provider>

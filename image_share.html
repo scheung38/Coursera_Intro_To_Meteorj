@@ -3,7 +3,7 @@
 </head>
 
 <body>
-  <!--{{> image_add_form_template}}-->
+  {{> image_add_form_template}}
   {{> hello_template}}
   {{> time_template}}
   {{> images_template}}
@@ -43,7 +43,7 @@
 <template name="image_add_form_template">
     <form class="js-add-image">
         <input type="text" name="img_src"/>
-        <br/> <input type="text" name="img_alt"/>
+        <br/><input type="text" name="img_alt"/>
         <button class="btn btn-success">save</button>
     </form>
 </template>
