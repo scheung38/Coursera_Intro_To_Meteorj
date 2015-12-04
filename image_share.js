@@ -3,6 +3,24 @@ console.log(Images.find().count());
 
 if (Meteor.isClient) {
 
+  Session.set("imageLimit", 8);
+
+  lastScrollTop = 0;
+  $(window).scroll(function (event) {
+    // test if we are near the bottom of the window
+     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+       //where are we in the page?
+        var scrollTop = $(this).scrollTop();
+       //test if we are going down
+       if  (scrollTop > lastScrollTop) {
+         //console.log("going down at the bottom of the page");
+         //yes we are heading down...
+         Session.set("imageLimit", Session.get("imageLimit") + 4);
+       }
+      lastScrollTop = scrollTop;
+     }
+  });
+
   Accounts.ui.config({
     passwordSignupFields:"USERNAME_AND_EMAIL"
   });
@@ -24,7 +42,35 @@ if (Meteor.isClient) {
 
 
   Template.images_template.helpers({
-    images:Images.find({}, {sort: {createdOn: -1, rating: -1}}),
+    images: function () {
+      if (Session.get("userFilter")) {
+        return Images.find({createBy:Session.get("userFilter")}, {sort: {createdOn: -1, rating: -1}, limit:Session.get("imageLimit")});
+      }
+      else {
+
+      }
+      return Images.find({}, {sort: {createdOn: -1, rating: -1}});
+    },
+
+    filtering_images: function () {
+       if (Session.get("userFilter")) {
+         return true;
+       }
+      else {
+         return false;
+       }
+    },
+
+    getFilterUser: function () {
+      if (Session.get("userFilter")) {
+        var user = Meteor.users.findOne({_id:Session.get("userFilter")});
+        return user.username;
+          }
+      else {
+        return false;
+      }
+    },
+
     getUser: function (user_id) {
       var user = Meteor.users.findOne({_id:user_id});
       if (user) {
@@ -74,7 +120,15 @@ if (Meteor.isClient) {
 
     'click .js-show-image-form': function (event) {
       $("#image_add_form_template").modal('show');
+    },
+
+    'click .js-set-image-filter': function (event) {
+      Session.set("userFilter",this.createBy );
+    },
+    'click .js-unset-image-filter': function (event) {
+      Session.set("userFilter", undefined );
     }
+
   });
 
   Template.image_add_form_template.events({

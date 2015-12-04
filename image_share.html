@@ -43,6 +43,12 @@
     <button class="btn btn-success js-show-image-form">add image</button>
     {{/if}}
 
+    <h2>
+        {{#if filtering_images}}
+            Showing images by user {{getFilterUser}}. <a href="#" class="js-unset-image-filter">Show all images</a>
+        {{/if}}
+    </h2>
+
     <div class="row">
     {{#each images}}
     <div class="col-xs-12 col-md-3" id="{{_id}}">
@@ -54,7 +60,11 @@
                 <h3>Rating: {{rating}}</h3>
 
                 <p>{{img_alt}}</p>
-                <p>User: {{getUser createdBy}}</p>
+                
+                <p>
+                    User:
+                    <a href="#" class="js-set-image-filter">{getUser createdBy}}</a>{
+                </p>
 
                 <p>
                     {{>starsRating mutable=true class="js-rate-image" data-id=_id rating=rating}}
