@@ -2,6 +2,11 @@ Images = new Mongo.Collection("images");
 console.log(Images.find().count());
 
 if (Meteor.isClient) {
+
+  Accounts.ui.config({
+    passwordSignupFields:"USERNAME_AND_EMAIL"
+  });
+
   Session.setDefault('show_country_variable', 'UK');
   Session.setDefault('show_current_time_variable', new Date());
 
@@ -18,15 +23,25 @@ if (Meteor.isClient) {
   });
 
 
-  Template.images_template.helpers({images:
-        Images.find({}, {sort: {createdOn: -1, rating: -1}})
+  Template.images_template.helpers({
+    images:Images.find({}, {sort: {createdOn: -1, rating: -1}}),
+    getUser: function (user_id) {
+      var user = Meteor.users.findOne({_id:user_id});
+      if (user) {
+        return user.username;
+      } else {
+        return "anon";
+      }
+    }
   });
 
 
   Template.body.helpers({username: function () {
 
       if (Meteor.user()) {
-        return Meteor.user().emails[0].address;
+        //return Meteor.user().emails[0].address;
+        return Meteor.user().username;
+
       }
       else {
         return "anonymous internet user";
@@ -69,11 +84,15 @@ if (Meteor.isClient) {
         img_alt = event.target.img_alt.value;
         console.log("src: " + img_src + " alt:" + img_alt);
 
-        Images.insert({
-          img_src:img_src,
-          img_alt:img_alt,
-          createdOn: new Date()
-        });
+        if (Meteor.user()) {
+          Images.insert({
+            img_src: img_src,
+            img_alt: img_alt,
+            createdOn: new Date(),
+            //createBy: Meteor.userId()
+            createBy: Meteor.user()._id
+          });
+        }
 
         $("#image_add_form_template").modal('hide');
 
