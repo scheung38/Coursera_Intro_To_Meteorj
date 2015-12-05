@@ -1,7 +1,6 @@
-Images = new Mongo.Collection("images");
-console.log(Images.find().count());
-
-if (Meteor.isClient) {
+/**
+ * Created by minminsanjose on 05/12/2015.
+ */
 
   Session.set("imageLimit", 8);
 
@@ -44,7 +43,7 @@ if (Meteor.isClient) {
   Template.images_template.helpers({
     images: function () {
       if (Session.get("userFilter")) {
-        return Images.find({createBy:Session.get("userFilter")}, {sort: {createdOn: -1, rating: -1}, limit:Session.get("imageLimit")});
+        return Images.find({createdBy:Session.get("userFilter")}, {sort: {createdOn: -1, rating: -1}}, {limit:Session.get("imageLimit")});
       }
       else {
 
@@ -154,9 +153,4 @@ if (Meteor.isClient) {
       }
   }); // end of image_add_form_template
 
-} // end of Meteor.isClient
-
-//if (Meteor.isServer) {
-//  Meteor.startup(function () {
-//  });
-//}
+//} // end of Meteor.isClient
